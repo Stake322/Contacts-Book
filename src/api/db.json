@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "user": "444",
+      "contacts": [
+        {
+          "id": "8vmeoxf",
+          "firstName": "Ильяс",
+          "secondName": "Мамаев",
+          "number": "+79276295729",
+          "email": "stake164rus@mail.ru",
+          "favorite": true
+        }
+      ],
+      "id": 1
+    },
+    {
+      "user": "Sacura",
+      "contacts": [
+        {
+          "id": "q5qjg40",
+          "firstName": "Ильяс",
+          "secondName": "Мамаев",
+          "number": "+79276295729",
+          "email": "stake164rus@mail.ru",
+          "favorite": true
+        }
+      ],
+      "id": 2
+    },
+    {
+      "user": "123",
+      "contacts": [
+        {
+          "id": "wh5hoxs",
+          "firstName": "Ильяс",
+          "secondName": "Мамаев",
+          "number": "+79276295729",
+          "email": "stake164rus@mail.ru",
+          "favorite": true
+        },
+        {
+          "id": "56ux2j2",
+          "firstName": "Абоба",
+          "secondName": "Абобович",
+          "number": "79276295729",
+          "email": "79276295729",
+          "favorite": true
+        }
+      ],
+      "id": 3
+    }
+  ]
+}
