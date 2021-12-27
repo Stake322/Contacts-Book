@@ -1,0 +1,4 @@
+{
+    "mainPage": "http://localhost:3001/#",
+    "contactPage": "http://localhost:3001/#/contacts"
+}

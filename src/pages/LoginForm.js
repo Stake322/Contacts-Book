@@ -1,13 +1,13 @@
-import React, { useState, useContext, useEffect } from 'react'
-import { Button, Form, Grid, Header, Image, Message, Segment, Icon, Divider, Loader } from 'semantic-ui-react'
+import React, { useState, useEffect } from 'react'
+import { Button, Form, Grid, Header,Segment, Icon, Divider} from 'semantic-ui-react'
 import Portal from '../Components/Portal';
 import * as api from "../api"
 
+const {mainPage, contactPage} = require('../config.json')
 
 
 
-const LoginForm = (props) => {
-    const url = "http://localhost:3001/#/contacts"
+const LoginForm = () => {
     const [login, setLogin] = useState();
     const [PW, setPW] = useState();
     const [isSingUp, setIsSingUp] = useState(false);
@@ -35,7 +35,7 @@ const LoginForm = (props) => {
         let loginData = JSON.parse(localStorage.getItem(login));
         if (localStorage.hasOwnProperty(login) && loginData.password == PW) {
             openAlert("Успешный вход! Приятного пользования")
-            window.location.replace(url);
+            window.location.replace(contactPage);
             localStorage.setItem("username", login);
         } else {
             openAlert("Неверный логин или пароль!")
@@ -43,7 +43,7 @@ const LoginForm = (props) => {
     }
     useEffect(() => {
         const username = localStorage.getItem("username")
-        if (username) window.location.replace(url);
+        if (username) window.location.replace(contactPage);
     }, [])
 
     return (
